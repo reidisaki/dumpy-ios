@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E82C61361A32E0F3002481B3 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C61351A32E0F3002481B3 /* GoogleMaps.framework */; };
+		E82C613A1A32E18D002481B3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C61391A32E18D002481B3 /* AVFoundation.framework */; };
+		E82C613C1A32E194002481B3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C613B1A32E194002481B3 /* CoreData.framework */; };
+		E82C613E1A32E199002481B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C613D1A32E199002481B3 /* CoreLocation.framework */; };
+		E82C61401A32E19E002481B3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C613F1A32E19E002481B3 /* CoreText.framework */; };
+		E82C61421A32E1A5002481B3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C61411A32E1A5002481B3 /* GLKit.framework */; };
+		E82C61441A32E1AB002481B3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C61431A32E1AB002481B3 /* ImageIO.framework */; };
+		E82C61461A32E1B8002481B3 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C61451A32E1B8002481B3 /* libc++.dylib */; };
+		E82C61481A32E1CC002481B3 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C61471A32E1CC002481B3 /* libicucore.A.dylib */; };
+		E82C614A1A32E1D5002481B3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C61491A32E1D4002481B3 /* libz.dylib */; };
+		E82C614C1A32E1DE002481B3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C614B1A32E1DE002481B3 /* OpenGLES.framework */; };
+		E82C614E1A32E1E4002481B3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C614D1A32E1E4002481B3 /* QuartzCore.framework */; };
+		E82C61501A32E1E9002481B3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C614F1A32E1E9002481B3 /* SystemConfiguration.framework */; };
+		E88EEF601A32DD1100F5AFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88EEF5F1A32DD1100F5AFA9 /* AppDelegate.swift */; };
+		E88EEF631A32DD1100F5AFA9 /* ThereYet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E88EEF611A32DD1100F5AFA9 /* ThereYet.xcdatamodeld */; };
+		E88EEF651A32DD1100F5AFA9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88EEF641A32DD1100F5AFA9 /* MapViewController.swift */; };
+		E88EEF681A32DD1100F5AFA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88EEF661A32DD1100F5AFA9 /* Main.storyboard */; };
+		E88EEF6D1A32DD1100F5AFA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E88EEF6B1A32DD1100F5AFA9 /* LaunchScreen.xib */; };
+		E88EEF791A32DD1200F5AFA9 /* ThereYetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88EEF781A32DD1200F5AFA9 /* ThereYetTests.swift */; };
+		E89F37791A3514BE00C54035 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F37781A3514BE00C54035 /* TypesTableViewController.swift */; };
+		E89F377C1A3514D100C54035 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F377A1A3514D100C54035 /* GoogleDataProvider.swift */; };
+		E89F377D1A3514D100C54035 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F377B1A3514D100C54035 /* GooglePlace.swift */; };
+		E89F37811A3514DB00C54035 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F377E1A3514DB00C54035 /* MarkerInfoView.swift */; };
+		E89F37821A3514DB00C54035 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F377F1A3514DB00C54035 /* MarkerInfoView.xib */; };
+		E89F37831A3514DB00C54035 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F37801A3514DB00C54035 /* UIViewExtension.swift */; };
+		E89F37861A35150800C54035 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89F37851A35150800C54035 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E88EEF731A32DD1200F5AFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E88EEF521A32DD1100F5AFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E88EEF591A32DD1100F5AFA9;
+			remoteInfo = ThereYet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E82C61351A32E0F3002481B3 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		E82C61391A32E18D002481B3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E82C613B1A32E194002481B3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E82C613D1A32E199002481B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E82C613F1A32E19E002481B3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E82C61411A32E1A5002481B3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		E82C61431A32E1AB002481B3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E82C61451A32E1B8002481B3 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		E82C61471A32E1CC002481B3 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
+		E82C61491A32E1D4002481B3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E82C614B1A32E1DE002481B3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E82C614D1A32E1E4002481B3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E82C614F1A32E1E9002481B3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E82C61511A32E2DA002481B3 /* ThereYet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThereYet-Bridging-Header.h"; sourceTree = "<group>"; };
+		E88EEF5A1A32DD1100F5AFA9 /* ThereYet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThereYet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88EEF5E1A32DD1100F5AFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88EEF5F1A32DD1100F5AFA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E88EEF621A32DD1100F5AFA9 /* ThereYet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThereYet.xcdatamodel; sourceTree = "<group>"; };
+		E88EEF641A32DD1100F5AFA9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E88EEF671A32DD1100F5AFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E88EEF6C1A32DD1100F5AFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E88EEF721A32DD1200F5AFA9 /* ThereYetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThereYetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88EEF771A32DD1200F5AFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88EEF781A32DD1200F5AFA9 /* ThereYetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThereYetTests.swift; sourceTree = "<group>"; };
+		E89F37781A3514BE00C54035 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
+		E89F377A1A3514D100C54035 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		E89F377B1A3514D100C54035 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		E89F377E1A3514DB00C54035 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		E89F377F1A3514DB00C54035 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		E89F37801A3514DB00C54035 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		E89F37851A35150800C54035 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E88EEF571A32DD1100F5AFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82C61501A32E1E9002481B3 /* SystemConfiguration.framework in Frameworks */,
+				E82C614E1A32E1E4002481B3 /* QuartzCore.framework in Frameworks */,
+				E82C614C1A32E1DE002481B3 /* OpenGLES.framework in Frameworks */,
+				E82C614A1A32E1D5002481B3 /* libz.dylib in Frameworks */,
+				E82C61481A32E1CC002481B3 /* libicucore.A.dylib in Frameworks */,
+				E82C61461A32E1B8002481B3 /* libc++.dylib in Frameworks */,
+				E82C61441A32E1AB002481B3 /* ImageIO.framework in Frameworks */,
+				E82C61421A32E1A5002481B3 /* GLKit.framework in Frameworks */,
+				E82C61401A32E19E002481B3 /* CoreText.framework in Frameworks */,
+				E82C613E1A32E199002481B3 /* CoreLocation.framework in Frameworks */,
+				E82C613C1A32E194002481B3 /* CoreData.framework in Frameworks */,
+				E82C613A1A32E18D002481B3 /* AVFoundation.framework in Frameworks */,
+				E82C61361A32E0F3002481B3 /* GoogleMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88EEF6F1A32DD1200F5AFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E88EEF511A32DD1100F5AFA9 = {
+			isa = PBXGroup;
+			children = (
+				E82C614F1A32E1E9002481B3 /* SystemConfiguration.framework */,
+				E82C614D1A32E1E4002481B3 /* QuartzCore.framework */,
+				E82C614B1A32E1DE002481B3 /* OpenGLES.framework */,
+				E82C61491A32E1D4002481B3 /* libz.dylib */,
+				E82C61471A32E1CC002481B3 /* libicucore.A.dylib */,
+				E82C61451A32E1B8002481B3 /* libc++.dylib */,
+				E82C61431A32E1AB002481B3 /* ImageIO.framework */,
+				E82C61411A32E1A5002481B3 /* GLKit.framework */,
+				E82C613F1A32E19E002481B3 /* CoreText.framework */,
+				E82C613D1A32E199002481B3 /* CoreLocation.framework */,
+				E82C613B1A32E194002481B3 /* CoreData.framework */,
+				E82C61391A32E18D002481B3 /* AVFoundation.framework */,
+				E82C61351A32E0F3002481B3 /* GoogleMaps.framework */,
+				E88EEF5C1A32DD1100F5AFA9 /* ThereYet */,
+				E88EEF751A32DD1200F5AFA9 /* ThereYetTests */,
+				E88EEF5B1A32DD1100F5AFA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E88EEF5B1A32DD1100F5AFA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E88EEF5A1A32DD1100F5AFA9 /* ThereYet.app */,
+				E88EEF721A32DD1200F5AFA9 /* ThereYetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E88EEF5C1A32DD1100F5AFA9 /* ThereYet */ = {
+			isa = PBXGroup;
+			children = (
+				E89F37851A35150800C54035 /* Images.xcassets */,
+				E89F377E1A3514DB00C54035 /* MarkerInfoView.swift */,
+				E89F377F1A3514DB00C54035 /* MarkerInfoView.xib */,
+				E89F37801A3514DB00C54035 /* UIViewExtension.swift */,
+				E89F377A1A3514D100C54035 /* GoogleDataProvider.swift */,
+				E89F377B1A3514D100C54035 /* GooglePlace.swift */,
+				E89F37781A3514BE00C54035 /* TypesTableViewController.swift */,
+				E88EEF5F1A32DD1100F5AFA9 /* AppDelegate.swift */,
+				E88EEF641A32DD1100F5AFA9 /* MapViewController.swift */,
+				E88EEF661A32DD1100F5AFA9 /* Main.storyboard */,
+				E88EEF6B1A32DD1100F5AFA9 /* LaunchScreen.xib */,
+				E88EEF611A32DD1100F5AFA9 /* ThereYet.xcdatamodeld */,
+				E88EEF5D1A32DD1100F5AFA9 /* Supporting Files */,
+				E82C61511A32E2DA002481B3 /* ThereYet-Bridging-Header.h */,
+			);
+			path = ThereYet;
+			sourceTree = "<group>";
+		};
+		E88EEF5D1A32DD1100F5AFA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E88EEF5E1A32DD1100F5AFA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E88EEF751A32DD1200F5AFA9 /* ThereYetTests */ = {
+			isa = PBXGroup;
+			children = (
+				E88EEF781A32DD1200F5AFA9 /* ThereYetTests.swift */,
+				E88EEF761A32DD1200F5AFA9 /* Supporting Files */,
+			);
+			path = ThereYetTests;
+			sourceTree = "<group>";
+		};
+		E88EEF761A32DD1200F5AFA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E88EEF771A32DD1200F5AFA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E88EEF591A32DD1100F5AFA9 /* ThereYet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E88EEF7C1A32DD1200F5AFA9 /* Build configuration list for PBXNativeTarget "ThereYet" */;
+			buildPhases = (
+				E88EEF561A32DD1100F5AFA9 /* Sources */,
+				E88EEF571A32DD1100F5AFA9 /* Frameworks */,
+				E88EEF581A32DD1100F5AFA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThereYet;
+			productName = ThereYet;
+			productReference = E88EEF5A1A32DD1100F5AFA9 /* ThereYet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E88EEF711A32DD1200F5AFA9 /* ThereYetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E88EEF7F1A32DD1200F5AFA9 /* Build configuration list for PBXNativeTarget "ThereYetTests" */;
+			buildPhases = (
+				E88EEF6E1A32DD1200F5AFA9 /* Sources */,
+				E88EEF6F1A32DD1200F5AFA9 /* Frameworks */,
+				E88EEF701A32DD1200F5AFA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E88EEF741A32DD1200F5AFA9 /* PBXTargetDependency */,
+			);
+			name = ThereYetTests;
+			productName = ThereYetTests;
+			productReference = E88EEF721A32DD1200F5AFA9 /* ThereYetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E88EEF521A32DD1100F5AFA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Reid Isaki";
+				TargetAttributes = {
+					E88EEF591A32DD1100F5AFA9 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E88EEF711A32DD1200F5AFA9 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = E88EEF591A32DD1100F5AFA9;
+					};
+				};
+			};
+			buildConfigurationList = E88EEF551A32DD1100F5AFA9 /* Build configuration list for PBXProject "ThereYet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E88EEF511A32DD1100F5AFA9;
+			productRefGroup = E88EEF5B1A32DD1100F5AFA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E88EEF591A32DD1100F5AFA9 /* ThereYet */,
+				E88EEF711A32DD1200F5AFA9 /* ThereYetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E88EEF581A32DD1100F5AFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89F37821A3514DB00C54035 /* MarkerInfoView.xib in Resources */,
+				E89F37861A35150800C54035 /* Images.xcassets in Resources */,
+				E88EEF681A32DD1100F5AFA9 /* Main.storyboard in Resources */,
+				E88EEF6D1A32DD1100F5AFA9 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88EEF701A32DD1200F5AFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E88EEF561A32DD1100F5AFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89F37811A3514DB00C54035 /* MarkerInfoView.swift in Sources */,
+				E89F377C1A3514D100C54035 /* GoogleDataProvider.swift in Sources */,
+				E88EEF651A32DD1100F5AFA9 /* MapViewController.swift in Sources */,
+				E89F377D1A3514D100C54035 /* GooglePlace.swift in Sources */,
+				E89F37791A3514BE00C54035 /* TypesTableViewController.swift in Sources */,
+				E88EEF601A32DD1100F5AFA9 /* AppDelegate.swift in Sources */,
+				E89F37831A3514DB00C54035 /* UIViewExtension.swift in Sources */,
+				E88EEF631A32DD1100F5AFA9 /* ThereYet.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88EEF6E1A32DD1200F5AFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E88EEF791A32DD1200F5AFA9 /* ThereYetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E88EEF741A32DD1200F5AFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E88EEF591A32DD1100F5AFA9 /* ThereYet */;
+			targetProxy = E88EEF731A32DD1200F5AFA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E88EEF661A32DD1100F5AFA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E88EEF671A32DD1100F5AFA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E88EEF6B1A32DD1100F5AFA9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E88EEF6C1A32DD1100F5AFA9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E88EEF7A1A32DD1200F5AFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E88EEF7B1A32DD1200F5AFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E88EEF7D1A32DD1200F5AFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ThereYet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThereYet/ThereYet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E88EEF7E1A32DD1200F5AFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ThereYet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThereYet/ThereYet-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		E88EEF801A32DD1200F5AFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThereYetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThereYet.app/ThereYet";
+			};
+			name = Debug;
+		};
+		E88EEF811A32DD1200F5AFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThereYetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThereYet.app/ThereYet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E88EEF551A32DD1100F5AFA9 /* Build configuration list for PBXProject "ThereYet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88EEF7A1A32DD1200F5AFA9 /* Debug */,
+				E88EEF7B1A32DD1200F5AFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E88EEF7C1A32DD1200F5AFA9 /* Build configuration list for PBXNativeTarget "ThereYet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88EEF7D1A32DD1200F5AFA9 /* Debug */,
+				E88EEF7E1A32DD1200F5AFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E88EEF7F1A32DD1200F5AFA9 /* Build configuration list for PBXNativeTarget "ThereYetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88EEF801A32DD1200F5AFA9 /* Debug */,
+				E88EEF811A32DD1200F5AFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E88EEF611A32DD1100F5AFA9 /* ThereYet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E88EEF621A32DD1100F5AFA9 /* ThereYet.xcdatamodel */,
+			);
+			currentVersion = E88EEF621A32DD1100F5AFA9 /* ThereYet.xcdatamodel */;
+			path = ThereYet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E88EEF521A32DD1100F5AFA9 /* Project object */;
+}
